@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Workouts } from './Models/WorkoutModel';
+import { GlobalTableService } from './Services/global-table.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CLDTrainingWorkout';
+
 }

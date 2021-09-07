@@ -1,0 +1,25 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">MuscleGroup</th>
+        <th scope="col">ExerciseName</th>
+        <th scope="col">SetsNum</th>
+        <th scope="col">RepsNum</th>
+        <th scope="col">Split</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let workouts of CopiedWorkouts">
+        <td>{{workouts.MuscleGroup}}</td>
+        <td>{{workouts.ExerciseName}}</td>
+        <td>{{workouts.SetsNum}}</td>
+        <td>{{workouts.RepsNum}}</td>
+        <td>{{workouts.Split}}</td>
+        <td>
+          <a href="#" class="link-primary">Details</a>&nbsp;
+          <a href="#" class="link-danger">Delete</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
