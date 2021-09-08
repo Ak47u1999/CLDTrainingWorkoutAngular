@@ -1,24 +1,18 @@
 <table class="table">
     <thead>
       <tr>
-        <th scope="col">MuscleGroup</th>
-        <th scope="col">ExerciseName</th>
-        <th scope="col">SetsNum</th>
-        <th scope="col">RepsNum</th>
-        <th scope="col">Split</th>
-        <th scope="col">Actions</th>
+        <th scope="col" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">MuscleGroup</th>
+        <th scope="col" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">ExerciseName</th>
+        <th scope="col" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Actions</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let workouts of CopiedWorkouts">
-        <td>{{workouts.MuscleGroup}}</td>
-        <td>{{workouts.ExerciseName}}</td>
-        <td>{{workouts.SetsNum}}</td>
-        <td>{{workouts.RepsNum}}</td>
-        <td>{{workouts.Split}}</td>
+        <td style="font-weight: bold;">{{workouts.MuscleGroup}}</td>
+        <td style="font-weight: bold;">{{workouts.ExerciseName}}</td>
         <td>
-          <a href="#" class="link-primary">Details</a>&nbsp;
-          <a href="#" class="link-danger">Delete</a>
+          <a class="link-primary" (click)="this.details()">Details</a>&nbsp;
+          <a class="link-danger">Delete</a>
         </td>
       </tr>
     </tbody>
