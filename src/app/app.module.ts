@@ -7,6 +7,8 @@ import { WorkoutsComponent } from './workouts/workouts.component';
 import { SetailsComponent } from './workouts/setails/setails.component';
 import { DeleteComponent } from './workouts/delete/delete.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

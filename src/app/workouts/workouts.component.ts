@@ -19,8 +19,4 @@ export class WorkoutsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  details()
-  {
-    this.router.navigate(['WorkoutDetails'])
-  }
 }

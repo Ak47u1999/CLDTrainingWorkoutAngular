@@ -3,17 +3,18 @@
       <tr>
         <th scope="col" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">MuscleGroup</th>
         <th scope="col" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">ExerciseName</th>
-        <th scope="col" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Actions</th>
+        <th scope="col" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Set Number</th>
+        <th scope="col" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Reps Number</th>
+        <th scope="col" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Workout Split</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let workouts of CopiedWorkouts">
         <td style="font-weight: bold;">{{workouts.MuscleGroup}}</td>
         <td style="font-weight: bold;">{{workouts.ExerciseName}}</td>
-        <td>
-          <a class="link-primary" (click)="this.details()">Details</a>&nbsp;
-          <a class="link-danger">Delete</a>
-        </td>
+        <td style="font-weight: bold;">{{workouts.SetsNum}}</td>
+        <td style="font-weight: bold;">{{workouts.RepsNum}}</td>
+        <td style="font-weight: bold;">{{workouts.Split}}</td>
       </tr>
     </tbody>
   </table>

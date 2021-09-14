@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-setails',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./setails.component.css']
 })
 export class SetailsComponent implements OnInit {
+
+  @Input() parent2child?:string;
 
   constructor() { }
 
