@@ -10,6 +10,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ArnoldWorkoutComponent } from './arnold-workout/arnold-workout.component';
 import { SoldOutComponent } from './sold-out/sold-out.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { SoldOutComponent } from './sold-out/sold-out.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

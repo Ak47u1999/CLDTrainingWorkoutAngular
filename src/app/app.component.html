@@ -1,45 +1,45 @@
 <div class="img-fluid" id="backgroundimage">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">XYZ Gym</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" [routerLink]="['WelcomeDetails']">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['Workouts']">Workout List</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['ArnoldWorkouts']">
-            Arnold Blueprint
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" [routerLink]="['SoldOutMessage']" tabindex="-1" aria-disabled="true">Book your Seat (Sold out!)</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">XYZ Gym</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" [routerLink]="['WelcomeDetails']">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['Workouts']">Workout List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['ArnoldWorkouts']">
+              Arnold Blueprint
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" [routerLink]="['SoldOutMessage']" tabindex="-1" aria-disabled="true">Book your
+              Seat (Sold out!)</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" [(ngModel)]="this.searchParameter" type="text" placeholder="Google It!" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" (click)="this.onNavigate()">Search</button>
+        </form>
+      </div>
     </div>
+  </nav>
+
+  <router-outlet></router-outlet>
+
+
+<footer class="text-center text-lg-start bg-light text-muted" id="footer">
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" [routerLink]="['WelcomeDetails']">XYZ Gym</a>
+    
   </div>
-</nav>
-
-<router-outlet></router-outlet>
-
-
-<footer>
- 
-  <!-- <div class="ratio ratio-16x9">
-    <iframe src="https://www.youtube.com/embed/RNGueeFF0HU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div> -->
- 
-  <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX76Wlfdnj7AP" id="spotifyiframe" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
- </footer>
-
+</footer>
 </div>
