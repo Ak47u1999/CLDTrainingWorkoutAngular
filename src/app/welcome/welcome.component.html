@@ -1,12 +1,24 @@
-<p class="fs-1 ; text-center">Welcome</p>
-<marquee>Shut up and Squat!</marquee>
-<h3 class="text-decoration-line-through ; text-center">Workout Tomorrow</h3>
-<h3 class="text-center">
-    <a class="text-decoration-none" (click)="this.workoutComp()">Workout Right now!</a>
-</h3>
+<p class="fs-1 ; text-center">Welcome to XYZ Gym!</p>
 
-<!-- <footer>
-    <div class="Beedio">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/RNGueeFF0HU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>    
-</footer> -->
+<div>
+    <div class="parastyling-div">
+        Here are some tips from our experts that we have brought forth to you.<br>
+        These tips are definitely not for free but it is for our loyal customers that we have bought forth.<br>
+        Take a look at some tips from our experts that are learnt during hours of gruelsome workouts and years of
+        training<br>
+    </div>
+    <p class="parastyling">
+        <br>
+        <li>Stay Hydrated!</li>
+        <li>Muscle composition and shape can take years to arrive!<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This process
+            cannot be rushed.</li>
+        <li>Generous dose of anabolics can be taken but pay heed to it's side effects and research beforehand.</li>
+        <li>Follow are strict regimen! This is perhaps te most important point and ignored by many!</li>
+        <li>Avoid social media! It's OK to draw inspiration but remember that it is a toxic platform!</li>
+        <li>Prefer what your trainer says over the internet.</li>
+        <li>Stay patient!</li>
+        <li>Enjoy your workout!</li>
+        <li>Lift heavy but with safety and caution!</li>
+    </p>
+</div>
+<a [routerLink]="['ArnoldWorkouts']" class="link" (click)="this.workoutComp()"> Click here for some motivational tips from Arnold Schwarnegger</a>

@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class WelcomeComponent implements OnInit {
 
+  activateArnoldIframe :boolean =false;
   constructor(private router:Router) { }
 
   ngOnInit(): void {
@@ -15,6 +16,6 @@ export class WelcomeComponent implements OnInit {
 
   workoutComp()
   {
-    this.router.navigate(['Workouts']);
+    this.router.navigate(['ArnoldWorkouts']);
   }
 }

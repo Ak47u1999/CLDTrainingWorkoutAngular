@@ -8,6 +8,8 @@ import { SetailsComponent } from './workouts/setails/setails.component';
 import { DeleteComponent } from './workouts/delete/delete.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ArnoldWorkoutComponent } from './arnold-workout/arnold-workout.component';
+import { SoldOutComponent } from './sold-out/sold-out.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     WorkoutsComponent,
     SetailsComponent,
     DeleteComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ArnoldWorkoutComponent,
+    SoldOutComponent
   ],
   imports: [
     BrowserModule,
